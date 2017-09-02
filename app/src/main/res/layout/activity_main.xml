@@ -83,13 +83,13 @@
         android:orientation = "horizontal" >
 
         <RadioButton
+            android:id="@+id/rSim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Sim"
-            android:id="@+id/rSim"
-            android:layout_row="3"
             android:layout_column="1"
-            android:onClick="radioClick" />
+            android:layout_row="3"
+            android:onClick="radioClick"
+            android:text="@string/Sim" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -116,7 +116,8 @@
         android:id="@+id/chkPromocao"
         android:layout_row="4"
         android:layout_column="1"
-        android:layout_columnSpan="2" />
+        android:layout_columnSpan="2"
+        android:onClick="checkClick" />
 
     <TextView
         android:id="@+id/textLimitePromocao"
@@ -128,12 +129,15 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <CheckBox
+        android:id="@+id/chkLimite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="5"
         android:layout_column="1"
         android:layout_columnSpan="2"
-        android:id="@+id/chkLimite" />
+        android:layout_row="5"
+        android:checked="false"
+        tools:checked="false"
+        android:onClick="checkClick" />
 
     <TextView
         android:id="@+id/textEstoqueRefrigerado"
@@ -150,15 +154,17 @@
         android:id="@+id/chkEstoque"
         android:layout_row="6"
         android:layout_column="1"
-        android:layout_columnSpan="2" />
+        android:layout_columnSpan="2"
+        android:onClick="checkClick" />
 
     <Button
+        android:id="@+id/btGravar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Gravar"
-        android:id="@+id/btGravar"
-        android:layout_row="7"
         android:layout_column="0"
         android:layout_columnSpan="3"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        android:layout_row="7"
+        android:onClick="gravarTexto"
+        android:text="Gravar" />
 </GridLayout>

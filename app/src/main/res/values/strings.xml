@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Estoque Comercial</string>
+    <string name="Sim">sim</string>
+    <string name="Não">nao</string>
 </resources>

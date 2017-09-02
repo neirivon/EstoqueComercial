@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unidadeMedida">
+        <item>caixa</item>
+        <item>lata</item>
+        <item>litro</item>
+        <item>metro</item>
+    </string-array>
+</resources>
